@@ -14,19 +14,19 @@ public class IngredientTest {
     Ingredient ingredient = new Ingredient(type, name, price);
 
     @Test
-    public void doesGetPriceWorks(){
+    public void doesGetPriceWork(){
         float actual = ingredient.getPrice();
         Assert.assertEquals(price,actual,2);
     }
 
     @Test
-    public void doesGetNameWorks(){
+    public void doesGetNameWork(){
         String actual = ingredient.getName();
         Assert.assertEquals(name,actual);
     }
 
     @Test
-    public void doesGetTypeWorks(){
+    public void doesGetTypeWork(){
         IngredientType actual = ingredient.getType();
         Assert.assertEquals(type,actual);
     }

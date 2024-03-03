@@ -11,13 +11,13 @@ public class BunTest {
     Bun bun = new Bun(name, price);
 
     @Test
-    public void doesGetNameWorks(){
+    public void doesGetNameWork(){
         String actual = bun.getName();
         Assert.assertEquals(name,actual);
     }
 
     @Test
-    public void doesGetPriceWorks(){
+    public void doesGetPriceWork(){
         Float actual = bun.getPrice();
         Assert.assertEquals(price,actual);
     }
